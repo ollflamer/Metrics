@@ -9,8 +9,15 @@ export default {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'dm-sans': ['DM Sans', 'sans-serif'],
+      },
+      colors: {
+        'primary-dark': '#1D4355',
+        'primary-blue': '#289DD2',
+      },
+    },
   },
   plugins: [],
 }
-

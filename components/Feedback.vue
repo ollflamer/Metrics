@@ -99,7 +99,7 @@
               </svg>
               Отправка...
             </span>
-            <span v-else>Отправить сообщение</span>
+            <span v-else>Подробнее о нас</span>
           </button>
         </form>
       </div>
