@@ -53,7 +53,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer>   
 </template>
 
 
@@ -64,7 +64,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #e5e7eb;
 }
 .header-container {
   display: flex;

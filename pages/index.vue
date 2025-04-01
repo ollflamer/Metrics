@@ -1,5 +1,6 @@
 <template>
-    <section class="main">
+    <container class="body1">
+        <section class="main">
         <div class="main-container">
             <div class="main-title">        
                 <h1>Создание сайтов и приложений</h1>
@@ -357,8 +358,92 @@
             </div>
         </div>
     </section>
+    </container>
 </template>
-<style>
+<style scoped>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+.body1 {
+  background-image: url("/BG.svg");
+  background-position: center 122px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow-x: hidden; /* предотвращает горизонтальный скролл */
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  padding-bottom: 310px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 120vh;
+  padding: 0 34px;
+  text-align: center;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 0.005em;
+  color: #1D4355;
+}
+.main-description {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 34px;
+  letter-spacing: 0.005em;
+  color: #1D435580;
+  text-align: center;
+}
+.main-button {
+  background-color: #1D4355;
+  padding: 16px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn1 {
+  border: none;
+  text-decoration: none;
+  background-color: #1D4355;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn1:hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 28px;
+}
+.btn1:active {
+  transition: all 0.1s ease;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 28px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -864,7 +949,7 @@
 /* Feedback Section */
 .feedback {
   width: 100%;
-  background-image: url('../img/bg-feedback.png');
+  background-image: url('../public/bg-feedback.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
